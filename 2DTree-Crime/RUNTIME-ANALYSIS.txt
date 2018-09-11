@@ -1,0 +1,10 @@
+ * A note on the complexity of runtime analysis:
+ * 
+ * Runtime analysis on K-D Trees is challenging in the average case, but not so much in the best and worst cases. 
+ * Worst case is easy -- pick the wrong path, and out performance degrades tothat of a linked list. 
+ * Similarly, analysis for the best case is trivial, as best case is a balanced tree, and has lg(n) performance.
+ * 
+ * The average case however, is hard because we need to consider how likely it is for the tree to be balanced or 
+ * unbalanced. The chance of the tree being balanced can be improved by picking a "smarter" (closer to the true median) 
+ * root of each subtree, such as using a median of three approach. \
+ *
